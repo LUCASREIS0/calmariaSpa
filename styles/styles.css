@@ -279,7 +279,7 @@ header #home .img-home img {
     max-width: 46%;
   }
   #contatos .contatos-form {
-    max-width: 100%;
+    max-width: 100% !important;
   }
 }
 #contatos {
