@@ -1,0 +1,25 @@
+@use '../abstract/variaveis'; // Importa o módulo de variáveis
+@use '../abstract/mixins'; // Importa o módulo de mixins
+
+#desconto {
+    // Estilização do desconto
+    @include mixins.margem-central(80%); // Aplica uma margem central com 80% da largura ao elemento com id "desconto"
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2rem;
+
+    .input-btn {
+        // Estilização do botão de input
+        $largura-input: 80%; // Declara uma variável para a largura do input
+        width: $largura-input;
+        height: 55px;
+    }
+
+    img {
+        // Estilização das imagens dentro do desconto
+        display: none; // Esconde as imagens dentro do elemento com id "desconto"
+    }
+}

@@ -1,0 +1,32 @@
+@use '../abstract/variaveis'; // Importa o módulo de variáveis
+@use '../abstract/mixins'; // Importa o módulo de mixins
+
+/* Estilos para dispositivos de tela com largura menor ou igual a 990 pixels (tablet) */
+@media screen and (max-width: 990px) {
+    #contatos {
+        // Estilização dos contatos em telas menores que 990px
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+        max-width: 100%;
+
+        .contatos-imgs {
+            // Estilização das imagens nos contatos
+            max-width: 100%;
+
+            img {
+                // Estilização das imagens individualmente
+                &:nth-child(n + 2) {
+                    // Exibe apenas a partir do segundo filho de img dentro de .contatos-imgs
+                    display: flex;
+                    max-width: 46%; // Define a largura máxima para as imagens
+                }
+            }
+        }
+
+        .contatos-form {
+            // Estilização do formulário de contatos
+            max-width: 100%; // Define a largura máxima para o formulário de contatos
+        }
+    }
+}

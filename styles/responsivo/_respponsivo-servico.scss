@@ -1,0 +1,14 @@
+@use '../abstract/variaveis'; // Importa o módulo de variáveis
+@use '../abstract/mixins'; // Importa o módulo de mixins
+
+@media screen and (max-width: 990px) {
+    #servico {
+        // Estilização do serviço em telas menores que 990px
+        .cards {
+            // Estilização dos cards dentro do serviço
+            display: flex;
+            flex-direction: column;
+            gap: 1.8rem; // Espaçamento entre os cards
+        }
+    }
+}

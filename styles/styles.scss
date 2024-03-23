@@ -10,6 +10,11 @@
 @use './components/footer';
 
 //responsivas
-@use'./responsivas/_responsivas';
+@use'./responsivo/responsivo-hearder';
+@use'./responsivo/responsivo-nosso-espaco';
+@use'./responsivo/respponsivo-servico';
+@use'./responsivo/responsivo-contato.scss';
+@use'./responsivo/responsivo-desconto.scss';
+
 
 

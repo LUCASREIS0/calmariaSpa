@@ -289,7 +289,6 @@ footer small {
   color: #0C0421;
 }
 
-/* Estilos para dispositivos de tela com largura menor ou igual a 990 pixels (tablet) */
 @media screen and (max-width: 990px) {
   header #home {
     display: flex;
@@ -317,6 +316,8 @@ footer small {
     text-align: center;
     align-items: center;
   }
+}
+@media screen and (max-width: 990px) {
   #nosso-espaco {
     display: flex;
     flex-direction: column;
@@ -342,28 +343,16 @@ footer small {
     max-width: 50%;
     margin: 0 auto;
   }
+}
+@media screen and (max-width: 990px) {
   #servico .cards {
     display: flex;
     flex-direction: column;
     gap: 1.8rem;
   }
-  #desconto {
-    margin: 0 auto;
-    width: 80%;
-    display: block;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-  #desconto .input-btn {
-    width: 80%;
-    height: 55px;
-  }
-  #desconto img {
-    display: none;
-  }
+}
+/* Estilos para dispositivos de tela com largura menor ou igual a 990 pixels (tablet) */
+@media screen and (max-width: 990px) {
   #contatos {
     display: flex;
     flex-direction: column;
@@ -380,4 +369,21 @@ footer small {
   #contatos .contatos-form {
     max-width: 100%;
   }
+}
+#desconto {
+  margin: 0 auto;
+  width: 80%;
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+#desconto .input-btn {
+  width: 80%;
+  height: 55px;
+}
+#desconto img {
+  display: none;
 }/*# sourceMappingURL=styles.css.map */

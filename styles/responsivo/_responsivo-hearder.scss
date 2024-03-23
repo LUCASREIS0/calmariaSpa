@@ -1,0 +1,40 @@
+@use '../abstract/variaveis'; // Importa o módulo de variáveis
+@use '../abstract/mixins'; // Importa o módulo de mixins
+
+@media screen and (max-width: 990px) {
+    header {
+        #home {
+            // Estilização do cabeçalho em telas menores que 990px
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            gap: 2rem; // Espaçamento entre os elementos
+
+            .textos-home {
+                // Estilização dos textos no cabeçalho
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+
+                h1 {
+                    // Estilização do título principal
+                    font-size: 2rem !important; // Tamanho da fonte aumentado
+                    text-align: center;
+                    width: auto;
+                    height: auto;
+                }
+
+                .btn-main {
+                    // Estilização do botão principal
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}

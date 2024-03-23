@@ -1,0 +1,40 @@
+@use '../abstract/variaveis'; // Importa o módulo de variáveis
+@use '../abstract/mixins'; // Importa o módulo de mixins
+
+@media screen and (max-width: 990px) {
+    #nosso-espaco {
+        // Estilização do nosso espaço em telas menores que 990px
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around; // Espaçamento uniforme entre os elementos
+
+        .detalhes {
+            // Estilização dos detalhes do nosso espaço
+            display: flex;
+            flex-direction: column;
+
+            &:nth-child(2) {
+                // Inverte a direção dos detalhes para o segundo filho de .detalhes
+                flex-direction: column-reverse;
+            }
+
+            .imgs-espaco {
+                // Estilização das imagens do nosso espaço
+                display: inline-flex;
+
+                .img-espaco,
+                .img-espaco1 {
+                    width: 100%;
+                }
+
+                .img-espaco1 {
+                    // Estilização da segunda imagem do nosso espaço
+                    display: inline-flex;
+                    max-width: 50%;
+                    margin: 0 auto; // Centraliza a imagem horizontalmente
+                }
+            }
+        }
+    }
+}
