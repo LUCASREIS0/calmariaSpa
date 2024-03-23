@@ -3,18 +3,28 @@
 
 //components
 @use './components/header';
+@use'./responsivo/responsivo-header';
+
 @use './components/nosso-espaco';
+@use'./responsivo/responsivo-nosso-espaco';
+
 @use './components/servico';
+@use'./responsivo/respponsivo-servico';
+
 @use './components/desconto';
+@use'./responsivo/responsivo-contato.scss';
+
 @use './components/contatos';
+@use'./responsivo/responsivo-desconto.scss';
+
 @use './components/footer';
 
-//responsivas
-@use'./responsivo/responsivo-hearder';
-@use'./responsivo/responsivo-nosso-espaco';
-@use'./responsivo/respponsivo-servico';
-@use'./responsivo/responsivo-contato.scss';
-@use'./responsivo/responsivo-desconto.scss';
+
+
+
+
+
+
 
 
 
