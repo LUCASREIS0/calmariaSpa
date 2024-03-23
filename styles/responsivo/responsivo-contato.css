@@ -1,0 +1,19 @@
+/* Estilos para dispositivos de tela com largura menor ou igual a 990 pixels (tablet) */
+@media screen and (max-width: 990px) {
+  #contatos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    max-width: 100%;
+  }
+  #contatos .contatos-imgs {
+    max-width: 100%;
+  }
+  #contatos .contatos-imgs img:nth-child(n+2) {
+    display: flex;
+    max-width: 46%;
+  }
+  #contatos .contatos-form {
+    max-width: 100% !important;
+  }
+}/*# sourceMappingURL=responsivo-contato.css.map */

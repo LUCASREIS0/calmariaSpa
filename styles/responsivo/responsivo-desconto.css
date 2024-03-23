@@ -1,0 +1,17 @@
+#desconto {
+  margin: 0 auto;
+  width: 80%;
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+#desconto .input-btn {
+  width: 80%;
+  height: 55px;
+}
+#desconto img {
+  display: none;
+}/*# sourceMappingURL=responsivo-desconto.css.map */

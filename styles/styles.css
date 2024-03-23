@@ -346,6 +346,9 @@ header #home .img-home img {
   color: #0C0421;
   outline: none;
 }
+#contatos .inputs .form-group .no-resize {
+  resize: none;
+}
 #contatos .inputs .btn {
   background: #CAD4FA;
   margin-top: 2rem;

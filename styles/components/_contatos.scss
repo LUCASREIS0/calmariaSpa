@@ -71,6 +71,10 @@
             textarea {
                 @extend input; // Herda estilos de input
             }
+
+            .no-resize {
+                resize: none;
+            }
         }
 
         .btn {
