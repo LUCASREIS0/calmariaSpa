@@ -1,55 +1,56 @@
-<div style="display: flex; align-items: center;">
-    <h1 style="margin-right: 20px;"> Projeto de Estilização com SASS 
-        <img align="left" alt="SASS" width="40px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" />
-    </h1>
+
+<div align="center">
+    <h1 style="color: #007bff; font-size: 36px;"> Projeto de Estilização com SASS </h1>
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="SASS Logo" width="100px" />
 </div>
 
-## ℹ️ Sobre o Projeto
+## ℹ️ **Sobre o Projeto**
 
-Este projeto foi desenvolvido como parte da formação [Aprofunde seus conhecimentos em CSS](https://cursos.alura.com.br/formacao-css-estilos) na Alura, com foco no curso [SASS e CSS: estilizando um site](https://cursos.alura.com.br/course/sass-css-estilizando-site). O objetivo principal foi aplicar os recursos do pré-processador SASS para estilizar um site, incluindo modularização de códigos, utilização de variáveis, mixins e partials, além da implementação de estilos para diversas seções do site.
+Este projeto é resultado da formação [*Aprofunde seus conhecimentos em CSS*](https://cursos.alura.com.br/formacao-css-estilos) da Alura, com foco no curso [**SASS e CSS: estilizando um site**](https://cursos.alura.com.br/course/sass-css-estilizando-site). O objetivo central foi aplicar os recursos avançados do pré-processador SASS para estilizar um site, priorizando a modularização, utilização de variáveis, mixins e partials.
 
-## 🎯 Objetivo
+## 🎯 **Objetivo**
 
-O principal objetivo deste projeto foi utilizar o pré-processador SASS para criar folhas de estilos de fácil leitura, modularizar o código, otimizar a estilização com variáveis e mixins, e aplicar os estilos em diferentes seções de um site.
+O principal objetivo deste projeto foi *utilizar o pré-processador SASS* para criar folhas de estilos de **fácil manutenção**, **modularizar o código** e **aplicar estilos consistentes** em diferentes seções de um site.
 
-## 🔧 Funcionalidades
+## 🔧 **Funcionalidades**
 
-- Utilização do pré-processador SASS para estilizar um site.
-- Modularização de códigos CSS com o uso de partials.
-- Otimização do código CSS com variáveis.
-- Criação de mixins para estilizar seções e textos de forma dinâmica.
-- Implementação de estilos para seções específicas como Serviços e Desconto.
-- Aplicação de pseudo-classes e Parent Selector para estilização avançada.
-- Reutilização de código com @Extend.
-- Posicionamento de imagens e estilização de formulários.
-- Utilização de sintaxe recuada para melhor legibilidade do código.
+- *Modularização de Código:* Organização dos estilos em `partials` para facilitar a manutenção.
+- *Otimização com Variáveis:* Utilização de `variáveis` para cores, tamanhos e outras propriedades.
+- *Criação de Mixins:* Códigos reutilizáveis para estilização dinâmica de seções e textos.
+- *Estilos Avançados:* Implementação de estilos para seções específicas, como `Serviços` e `Desconto`.
+- *Pseudo-classes e Parent Selector:* Aplicação de estilos avançados para interatividade.
+- *Reutilização de Código:* Utilização de `@Extend` para evitar repetição e manter o código limpo.
+- *Posicionamento e Estilização:* Posicionamento de imagens e estilização de formulários.
 
-## 🧠 Aprendizados em SASS e CSS
+## 🧠 **Aprendizados em SASS e CSS**
 
-Durante o desenvolvimento deste projeto, os principais aprendizados em SASS e CSS incluíram:
+Durante o desenvolvimento deste projeto, adquiri conhecimentos sólidos em:
 
-- Entendimento dos conceitos de pré-processadores CSS, em especial o SASS.
-- Modularização e organização de código CSS com partials.
-- Otimização do código CSS utilizando variáveis.
-- Criação de códigos reutilizáveis com mixins, @Extend e Parent Selector.
-- Aplicação prática de estilos em diferentes seções de um site.
+- *Modularização e Organização de Código:* Utilizando partials e imports para manter o código organizado e escalável.
+- *Otimização de Estilos:* Através de variáveis e mixins para reduzir a repetição e facilitar a manutenção.
+- *Estilização Avançada:* Aplicando pseudo-classes e Parent Selector para estilização dinâmica.
+- *Sintaxe Recuada:* Utilizando a sintaxe recuada para melhor legibilidade do código.
 
-## 🚀 Como Executar
+## 🚀 **Como Executar**
 
-Este projeto consiste em arquivos HTML e CSS, onde o CSS é gerado a partir dos arquivos SASS. Para executar o projeto, siga estas etapas:
+Para executar este projeto localmente, siga estas etapas:
 
-1. Faça o download ou clone este repositório.
-2. Certifique-se de ter o SASS instalado em sua máquina.
-3. Navegue até o diretório do projeto.
-4. Execute o comando `sass --watch scss:css` para compilar os arquivos SASS em CSS automaticamente.
-5. Abra o arquivo HTML no seu navegador preferido.
+1. **Clone o Repositório:** `git clone https://github.com/seu-usuario/seu-projeto.git`
+2. **Instale o SASS:** `npm install -g sass` (caso ainda não tenha instalado).
+3. **Navegue até o Diretório do Projeto:** `cd seu-projeto`
+4. **Compile o SASS para CSS:** `sass --watch scss:css`
+5. **Abra o Arquivo HTML:** Abra o arquivo `index.html` no seu navegador preferido.
 
-## 🔗 Versão Hospedada
+## 🔗 *Versão Hospedada*
 
-[Link para a versão hospedada do projeto](https://calmariaspar.vercel.app/)
+Uma versão hospedada deste projeto está disponível [aqui](https://calmariaspar.vercel.app/).
 
-## 👤 Autor
+## 👤 **Autor**
 
 Desenvolvido por [Lucas Reis](https://www.linkedin.com/in/lucasreisv/).
 
-<img src="/assets/calmariaSpar.png" width="auto" alt="img do projeto">
+<div align="center">
+    <img src="/assets/calmariaSpar.png" width="600px" alt="Screenshot do Projeto" />
+</div>
+
+---
