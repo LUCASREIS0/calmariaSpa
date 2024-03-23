@@ -119,27 +119,27 @@
             </div>
             <div class="contatos-form">
                 <h4 class="titulo">Entre em contato</h4>
-                <p class="infos">Reserve seu horário, tire dúvidas ou proponha sugestões, nosso canal é aberto para
-                    você!</p>
-                <form class="inputs">
+                <p class="infos">Reserve seu horário, tire dúvidas ou proponha sugestões, nosso canal é aberto para você!</p>
+                <form class="inputs" action="#" method="post">
                     <div class="form-group">
                         <label for="nomeContato">Nome</label>
-                        <input type="text" id="nomeContato" placeholder="Digite nome completo">
+                        <input type="text" id="nomeContato" name="nomeContato" placeholder="Digite nome completo" required>
                     </div>
                     <div class="form-group">
                         <label for="emailContato">Email</label>
-                        <input type="email" id="emailContato" placeholder="Digite seu email">
+                        <input type="email" id="emailContato" name="emailContato" placeholder="Digite seu email" required>
                     </div>
                     <div class="form-group">
                         <label for="telefoneContato">Telefone</label>
-                        <input type="text" id="telefoneContato" placeholder="(xx) xxxxx-xxxx">
+                        <input type="tel" id="telefoneContato" name="telefoneContato" placeholder="(xx) xxxxx-xxxx" pattern="\(\d{2}\) \d{5}-\d{4}" required>
                     </div>
                     <div class="form-group">
                         <label for="mensagemContato">Mensagem</label>
-                        <textarea type="text" id="mensagemContato" placeholder="Escreva sua mensagem"></textarea>
+                        <textarea id="mensagemContato" name="mensagemContato" placeholder="Escreva sua mensagem" required></textarea>
                     </div>
-                    <button class="btn" type="button">Enviar</button>
+                    <button class="btn" type="submit">Enviar</button>
                 </form>
+                
             </div>
         </section>
         <footer>
