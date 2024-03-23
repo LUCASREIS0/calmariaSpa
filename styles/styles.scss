@@ -1,5 +1,6 @@
 @use './abstract/root';
-
+//responsivas
+@use'./responsivas/_responsivas';
 
 //components
 @use './components/header';
@@ -9,8 +10,6 @@
 @use './components/contatos';
 @use './components/footer';
 
-//responsivas
-@use'./responsivas/_responsivas';
 
 
 

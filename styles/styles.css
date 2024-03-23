@@ -11,6 +11,99 @@ body {
   box-sizing: border-box; /* Define a caixa-modelo como border-box para incluir o preenchimento e a borda na largura e altura total do elemento */
 }
 
+/* Estilos para dispositivos de tela com largura menor ou igual a 990 pixels (tablet) */
+@media screen and (max-width: 990px) {
+  header #home {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  header #home .textos-home {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  header #home .textos-home h1 {
+    font-size: 2rem !important;
+    padding: 0 5%;
+    text-align: center;
+    width: auto;
+    height: auto;
+  }
+  header #home .textos-home .btn-main {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  #nosso-espaco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #nosso-espaco .detalhes {
+    display: flex;
+    flex-direction: column;
+  }
+  #nosso-espaco .detalhes:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+  #nosso-espaco .detalhes .imgs-espaco {
+    display: inline-flex;
+  }
+  #nosso-espaco .detalhes .imgs-espaco .img-espaco,
+  #nosso-espaco .detalhes .imgs-espaco .img-espaco1 {
+    width: 100%;
+  }
+  #nosso-espaco .detalhes .imgs-espaco .img-espaco1 {
+    display: inline-flex;
+    max-width: 50%;
+    margin: 0 auto;
+  }
+  #servico .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+  }
+  #desconto {
+    margin: 0 auto;
+    width: 80%;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  #desconto .input-btn {
+    width: 80%;
+    height: 55px;
+  }
+  #desconto img {
+    display: none;
+  }
+  #contatos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    max-width: 100%;
+  }
+  #contatos .contatos-imgs {
+    max-width: 100%;
+  }
+  #contatos .contatos-imgs img:nth-child(n+2) {
+    display: flex;
+    max-width: 46%;
+  }
+  #contatos .contatos-form {
+    max-width: 100%;
+  }
+}
 header {
   scroll-behavior: smooth;
   background: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
@@ -287,97 +380,4 @@ footer small {
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
   color: #0C0421;
-}
-
-/* Estilos para dispositivos de tela com largura menor ou igual a 990 pixels (tablet) */
-@media screen and (max-width: 990px) {
-  #home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-  }
-  #home .textos-home {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
-  #home .textos-home h1 {
-    padding: 0 5%;
-    text-align: center;
-    width: auto;
-    height: auto;
-    font-size: 2rem;
-  }
-  #home .textos-home .btn-main {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-  }
-  #nosso-espaco {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-  }
-  #nosso-espaco .detalhes {
-    display: flex;
-    flex-direction: column;
-  }
-  #nosso-espaco .detalhes:nth-child(2) {
-    flex-direction: column-reverse;
-  }
-  #nosso-espaco .detalhes .imgs-espaco {
-    display: inline-flex;
-  }
-  #nosso-espaco .detalhes .imgs-espaco .img-espaco,
-  #nosso-espaco .detalhes .imgs-espaco .img-espaco1 {
-    width: 100%;
-  }
-  #nosso-espaco .detalhes .imgs-espaco .img-espaco1 {
-    display: inline-flex;
-    max-width: 50%;
-    margin: 0 auto;
-  }
-  #servico .cards {
-    display: flex;
-    flex-direction: column;
-    gap: 1.8rem;
-  }
-  #desconto {
-    margin: 0 auto;
-    width: 80%;
-    display: block;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-  #desconto .input-btn {
-    width: 80%;
-    height: 55px;
-  }
-  #desconto img {
-    display: none;
-  }
-  #contatos {
-    display: flex;
-    flex-direction: column;
-    margin-top: 5rem;
-    max-width: 100%;
-  }
-  #contatos .contatos-imgs {
-    max-width: 100%;
-  }
-  #contatos .contatos-imgs img:nth-child(n+2) {
-    display: flex;
-    max-width: 46%;
-  }
-  #contatos .contatos-form {
-    max-width: 100%;
-  }
 }/*# sourceMappingURL=styles.css.map */
