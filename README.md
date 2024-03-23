@@ -49,8 +49,8 @@ Uma versão hospedada deste projeto está disponível [aqui](https://calmariaspa
 
 Desenvolvido por [Lucas Reis](https://www.linkedin.com/in/lucasreisv/).
 
-<div align="center">
-    <img src="/assets/calmariaSpar.png" width="600px" alt="Screenshot do Projeto" />
-</div>
+
+<img src="/assets/calmariaSpar.png" width="600px" alt="Screenshot do Projeto" />
+
 
 ---
