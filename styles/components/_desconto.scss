@@ -1,0 +1,51 @@
+@use '../abstract/variaveis'; // Importa o módulo de variáveis
+@use '../abstract/mixins'; // Importa o módulo de mixins
+
+#desconto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+
+    h4 {
+        @include mixins.ff-fs-cl(variaveis.$ft-titulos, 1.6rem, variaveis.$cor-primaria); // Aplica estilo de fonte, tamanho e cor
+        font-weight: 100; // Define o peso da fonte
+    }
+
+    p {
+        @include mixins.ff-fs-cl(variaveis.$ft-textos, 1.2rem, variaveis.$cor-primaria); // Aplica estilo de fonte, tamanho e cor
+    }
+
+    .input-btn {
+        $largura-input: 100%; // Declarando uma variável para o escopo do input
+        width: $largura-input; // Define a largura do elemento com base na variável
+
+        height: 65px;
+        border: 1px solid variaveis.$cor-secundaria; // Adiciona uma borda sólida com a cor secundária
+        border-radius: 65px; // Define o raio da borda para criar um formato arredondado
+        margin: 0 auto;
+        display: inline-flex;
+
+        input {
+            @include mixins.ff-fs-cl(variaveis.$ft-textos, 1.2rem, variaveis.$cor-primaria); // Aplica estilo de fonte, tamanho e cor
+            width: calc($largura-input * 0.65); // Calcula a largura do input com base na largura definida anteriormente
+            border: none;
+            outline: none; // Remove a borda que aparece quando o input é focado
+            margin-left: 2rem; // Adiciona uma margem à esquerda para separar o input do botão
+        }
+
+        button {
+            @include mixins.ff-fs-cl(variaveis.$ft-textos, 1.2rem, white); // Aplica estilo de fonte, tamanho e cor
+            width: calc($largura-input * 0.35); // Calcula a largura do botão com base na largura definida anteriormente
+            background: variaveis.$cor-secundaria; // Define a cor de fundo do botão
+            border-radius: 0 65px 65px 0; // Define o raio da borda para criar um formato arredondado somente nas extremidades
+            border: none;
+            transition: 0.5s; // Adiciona uma transição suave para animações
+
+            &:hover {
+                background-color: variaveis.$cor-terciaria; // Altera a cor de fundo ao passar o mouse
+                cursor: pointer; // Muda o cursor para indicar que o botão é clicável
+            }
+        }
+    }
+}

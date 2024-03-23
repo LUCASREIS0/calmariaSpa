@@ -1,0 +1,37 @@
+@use '../abstract/variaveis'; // Importa o módulo de variáveis
+@use '../abstract/mixins'; // Importa o módulo de mixins
+
+#nosso-espaco {
+    @include mixins.margem-central(80%); // Aplica uma margem central com 80% da largura ao elemento com id "nosso-espaco"
+
+    .detalhes {
+        width: 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 2rem;
+        padding: 2rem 0;
+
+        .imgs-espaco {
+            max-width: 500px; // Define a largura máxima para as imagens do espaço
+        }
+
+        .espaco-textos {
+            @extend .imgs-espaco; // Estende as propriedades de .imgs-espaco para .espaco-textos
+            .titulo {
+                @include mixins.ff-fs-cl(variaveis.$ft-titulos, 1.8rem, variaveis.$cor-secundaria); // Aplica estilo de fonte, tamanho e cor ao título
+                font-weight: 500; // Define o peso da fonte para o título
+            }
+            .infos {
+                @include mixins.ff-fs-cl(variaveis.$ft-textos, 1.2rem, variaveis.$cor-primaria); // Aplica estilo de fonte, tamanho e cor às informações
+            }
+            .separador {
+                width: 100%; // Define a largura do separador como 100%
+            }
+        }
+
+        &:nth-child(2) {
+            flex-direction: row-reverse; // Inverte a direção do flex para o segundo filho de .detalhes
+        }
+    }
+}

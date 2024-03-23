@@ -1,0 +1,12 @@
+// Mixin para aplicar margem central horizontalmente a um elemento
+@mixin margem-central($width) {
+    margin: 0 auto; // Define margem automática nas laterais para centralizar o elemento horizontalmente
+    width: $width; // Define a largura do elemento conforme o parâmetro fornecido
+}
+
+// Mixin para definir fonte, tamanho da fonte e cor do texto
+@mixin ff-fs-cl($f-family, $f-size, $f-color) {
+    font-family: $f-family; // Define a família da fonte
+    font-size: $f-size; // Define o tamanho da fonte
+    color: $f-color; // Define a cor do texto
+}

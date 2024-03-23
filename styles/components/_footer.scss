@@ -1,0 +1,14 @@
+@use '../abstract/variaveis'; // Importa o módulo de variáveis
+@use '../abstract/mixins'; // Importa o módulo de mixins
+
+footer {
+    background: variaveis.$cor-quaternaria; // Define o fundo do rodapé usando a variável de cor quaternária
+    padding: 2rem; // Adiciona preenchimento interno ao rodapé
+    margin-top: 5rem; // Adiciona uma margem superior ao rodapé
+
+    text-align: center; // Centraliza o texto dentro do rodapé
+
+    small {
+        @include mixins.ff-fs-cl(variaveis.$ft-textos, 1.2rem, variaveis.$cor-primaria); // Aplica estilo de fonte, tamanho e cor ao texto pequeno dentro do rodapé
+    }
+}

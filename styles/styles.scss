@@ -1,0 +1,16 @@
+@use './abstract/root';
+
+
+//components
+@use './components/header';
+@use './components/nosso-espaco';
+@use './components/servico';
+@use './components/desconto';
+@use './components/contatos';
+@use './components/footer';
+
+//responsivas
+@use'./responsivas/tablet';
+
+
+

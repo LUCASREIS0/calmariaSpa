@@ -1,0 +1,35 @@
+@use '../abstract/variaveis'; // Importa o módulo de variáveis
+@use '../abstract/mixins'; // Importa o módulo de mixins
+
+#servico {
+    background: variaveis.$gradiente-primario; // Define o fundo usando o gradiente primário
+    padding: 4rem 0; // Adiciona preenchimento superior e inferior
+
+    .cards {
+        @include mixins.margem-central(80%); // Aplica uma margem central com 80% da largura ao elemento com classe "cards"
+        display: flex; // Define o layout dos cards como flexível
+        gap:  1.5rem; // Adiciona espaçamento entre os cards
+
+        .card {
+            background: variaveis.$gradiente-secundario; // Define o fundo dos cards usando o gradiente secundário
+            padding: 1rem 1.5rem; // Adiciona preenchimento interno aos cards
+            text-align: center; // Centraliza o texto dentro dos cards
+            border: 1px solid white; // Adiciona uma borda sólida branca aos cards
+            border-radius: 3rem; // Define o raio da borda para criar um formato arredondado
+
+            &-titulo {
+                @include mixins.ff-fs-cl(variaveis.$ft-titulos, 1.6rem, variaveis.$cor-primaria); // Aplica estilo de fonte, tamanho e cor ao título do card
+                font-weight: 550; // Define o peso da fonte para o título do card
+            }
+
+            &-texto {
+                @include mixins.ff-fs-cl(variaveis.$ft-textos, 1.2rem, variaveis.$cor-primaria); // Aplica estilo de fonte, tamanho e cor ao texto do card
+            }
+
+            transition: transform 0.5s ease; // Adiciona uma transição suave para a transformação dos cards
+            &:hover {
+                transform: scale(1.05); // Aumenta o tamanho do card ao passar o mouse sobre ele
+            }
+        }
+    }
+}

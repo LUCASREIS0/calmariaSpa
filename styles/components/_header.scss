@@ -1,0 +1,86 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+header {
+    scroll-behavior: smooth;
+    background: variaveis.$gradiente-primario; // Define o fundo do cabeçalho usando uma variável de gradiente pré-definida.
+    padding: 2rem;
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.6rem;
+
+        .linha {
+            border-top: 1px solid black; // Cria uma linha horizontal usando uma borda superior.
+            width: 80%;
+        }
+
+        ul {
+            display: inline-flex;
+            gap: 2rem;
+
+            li {
+                list-style-type: none; // Remove os marcadores de lista.
+            }
+
+            a {
+                text-decoration: none; // Remove sublinhado de links.
+                @include mixins.ff-fs-cl(variaveis.$ft-textos, 1rem, variaveis.$cor-primaria); // Aplica uma mistura de fonte, tamanho e cor especificados.
+                font-weight: 500; // Define a espessura da fonte.
+                transition: 0.2s; // Adiciona uma transição suave para o efeito de hover.
+
+                &:hover {
+                    transform: scale(1.2); // Aumenta ligeiramente o tamanho ao passar o mouse sobre o link.
+                    font-weight: 700; // Aumenta a espessura da fonte ao passar o mouse sobre o link.
+                }
+            }
+        }
+    }
+
+    #home {
+        max-width: 1040px;
+        @include mixins.margem-central(80%); // Utiliza um mixin para centralizar horizontalmente o elemento com uma largura específica.
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .textos-home {
+            max-width: 464px;
+
+            h1 {
+                @include mixins.ff-fs-cl(variaveis.$ft-titulos, 2.3rem, variaveis.$cor-primaria); // Aplica uma mistura de fonte, tamanho e cor especificados.
+                margin-bottom: 2.5rem;
+
+                span {
+                    color: variaveis.$cor-secundaria; // Define a cor do texto usando uma variável.
+                }
+            }
+
+            .btn-main {
+                width: 280px;
+                height: 66px;
+                color: #fff;
+                border: none;
+                border-radius: 44px; // Define um raio de borda para criar cantos arredondados.
+                background-color: variaveis.$cor-secundaria; // Define a cor de fundo usando uma variável.
+                font-size: 1.3rem;
+                transition: 0.5s; // Adiciona uma transição suave para o efeito de hover.
+
+                &:hover {
+                    cursor: pointer;
+                    background: variaveis.$cor-default; // Altera a cor de fundo ao passar o mouse sobre o botão.
+                }
+            }
+        }
+
+        .img-home {
+            max-width: 474px;
+
+            img {
+                width: 100%; // Garante que a imagem ocupe 100% da largura do contêiner pai.
+            }
+        }
+    }
+}

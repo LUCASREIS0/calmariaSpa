@@ -1,0 +1,11 @@
+/* Define o comportamento de rolagem suave para a página */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Define estilos básicos para o corpo da página */
+body {
+    margin: 0; /* Remove margens padrão do corpo */
+    padding: 0; /* Remove preenchimento padrão do corpo */
+    box-sizing: border-box; /* Define a caixa-modelo como border-box para incluir o preenchimento e a borda na largura e altura total do elemento */
+}
