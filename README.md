@@ -1,6 +1,8 @@
-<div style="display: flex; align-items: center;"> 
-  <h1 style="margin-right: 20px;"> Projeto de Estilização com SASS 
-    <img align="left" alt="SASS" width="40px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" /></h1> 
+<div style="display: flex; align-items: center;">
+    <h1 style="margin-right: 20px;"> Projeto de Estilização com SASS 
+        <img align="left" alt="SASS" width="40px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" />
+    </h1>
+</div>
 
 ## ℹ️ Sobre o Projeto
 
@@ -44,20 +46,10 @@ Este projeto consiste em arquivos HTML e CSS, onde o CSS é gerado a partir dos 
 
 ## 🔗 Versão Hospedada
 
-[Link para a versão hospedada do projeto](#)
+[Link para a versão hospedada do projeto](https://calmariaspar.vercel.app/)
 
 ## 👤 Autor
 
-Desenvolvido por [Seu Nome](https://seu-site.com).
+Desenvolvido por [Lucas Reis](https://www.linkedin.com/in/lucasreisv/).
 
-## 🛠️ Tecnologias Utilizadas
-<img align="left" alt="HTML5" width="40px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" />
-<img align="left" alt="CSS3" width="40px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" />
-<img align="left" alt="SASS" width="40px" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" /> 
-
-
-
-## 📸 Capturas de Tela
-
-<img src="https:/assets/calmariaSpar" width="200" alt="Logo do Projeto">
-
+<img src="/assets/calmariaSpar.png" width="auto" alt="img do projeto">
