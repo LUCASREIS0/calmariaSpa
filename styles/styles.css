@@ -40,6 +40,7 @@ header nav ul a {
   color: #0C0421;
   font-weight: 500;
   transition: 0.2s;
+  white-space: nowrap;
 }
 header nav ul a:hover {
   transform: scale(1.2);
@@ -87,6 +88,9 @@ header #home .img-home img {
 }
 
 @media screen and (max-width: 990px) {
+  header nav ul {
+    padding: 0px;
+  }
   header #home {
     display: flex;
     flex-direction: column;

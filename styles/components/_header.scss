@@ -30,6 +30,7 @@ header {
                 @include mixins.ff-fs-cl(variaveis.$ft-textos, 1rem, variaveis.$cor-primaria); // Aplica uma mistura de fonte, tamanho e cor especificados.
                 font-weight: 500; // Define a espessura da fonte.
                 transition: 0.2s; // Adiciona uma transição suave para o efeito de hover.
+                white-space: nowrap; //Estilo para evitar que o texto quebre de linha em telas menores 
 
                 &:hover {
                     transform: scale(1.2); // Aumenta ligeiramente o tamanho ao passar o mouse sobre o link.
